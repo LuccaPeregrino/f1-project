@@ -7,7 +7,7 @@ const SeasonCard = (props) => {
     
     return(
         <div className='seasonCard' onClick = {onClickCardHandler}>
-            <img className="seasonCard-image" src={"/images/pngwing.png"}></img>
+            <img className="seasonCard-image" src={"../public/images/pngwing.png"}></img>
             <span className="seasonCard-name">{props.season}</span>
         </div>
     );
