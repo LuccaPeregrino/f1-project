@@ -7,7 +7,7 @@ import { MaterialReactTable, useMaterialReactTable} from 'material-react-table';
 import { ThemeProvider, createTheme, CssBaseline } from '@mui/material';
 import { useMemo } from "react";
 import Table2Legend from "../UI/Table2Legend.jsx"
-import img from "../public/images/pngwing.png"
+import img from '../assets/pngwing.png'
 
 
 

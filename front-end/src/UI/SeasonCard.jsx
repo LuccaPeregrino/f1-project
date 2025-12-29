@@ -1,5 +1,5 @@
 import './SeasonCard.css'
-import img from "../public/images/pngwing.png"
+import img from '../assets/pngwing.png'
 
 const SeasonCard = (props) => {
     const onClickCardHandler = () => {
