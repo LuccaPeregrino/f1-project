@@ -7,6 +7,7 @@ import { MaterialReactTable, useMaterialReactTable} from 'material-react-table';
 import { ThemeProvider, createTheme, CssBaseline } from '@mui/material';
 import { useMemo } from "react";
 import Table2Legend from "../UI/Table2Legend.jsx"
+import img from "../public/images/pngwing.png"
 
 
 
@@ -1899,7 +1900,7 @@ const SeasonInfo = (props) =>{
                         <div className='div-section div-content'>
                             <div className='div-infos'>
                                 <div className='div-infos-left'>
-                                    <img className="season-image" src={"src/assets/pngwing.png"}></img>
+                                    <img className="season-image" src={img}></img>
                                     <span className="season-name">{props.season}</span>
                                 </div>
                                 <div className='div-infos-right'>

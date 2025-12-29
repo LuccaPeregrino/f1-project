@@ -1,4 +1,5 @@
 import './SeasonCard.css'
+import img from "../public/images/pngwing.png"
 
 const SeasonCard = (props) => {
     const onClickCardHandler = () => {
@@ -7,7 +8,7 @@ const SeasonCard = (props) => {
     
     return(
         <div className='seasonCard' onClick = {onClickCardHandler}>
-            <img className="seasonCard-image" src={"../public/images/pngwing.png"}></img>
+            <img className="seasonCard-image" src={img}></img>
             <span className="seasonCard-name">{props.season}</span>
         </div>
     );
