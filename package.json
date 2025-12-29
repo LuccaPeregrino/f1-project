@@ -1,0 +1,21 @@
+{
+  "name": "f1-project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm install --prefix back-end && npm install --prefix front-end && npm run build --prefix front-end",
+    "start": "npm run start --prefix back-end"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LuccaPeregrino/f1-project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LuccaPeregrino/f1-project/issues"
+  },
+  "homepage": "https://github.com/LuccaPeregrino/f1-project#readme",
+  "description": ""
+}
