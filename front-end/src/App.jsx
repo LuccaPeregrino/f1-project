@@ -12,6 +12,8 @@ import { getDriversFilter, getConstructorsBySeason, getSeasonsByConstructor, get
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {faMagnifyingGlass} from "@fortawesome/free-solid-svg-icons";
 import AliceCarousel from 'react-alice-carousel';
+import logo from '../assets/logo.png'
+import loading from '../assets/loading.gif'
 
 
 
@@ -187,7 +189,7 @@ function App() {
   return (
     <div className="App">
       <div className='app-header'>
-          <img className='app-header__img' src="../src/assets/F1-Logo.png" />
+          <img className='app-header__img' src={logo} />
           <h2 className='app-header__link'>F1 project</h2>
       </div> 
       <div className='app-panel'>
@@ -214,7 +216,7 @@ function App() {
               <button className='app-search-button' onClick={handleSearch}><FontAwesomeIcon icon={faMagnifyingGlass} /></button>
             </div>
           </div>
-          {isLoading == true && <img src="../src/assets/loading.gif" alt="Loading..." style={{height: '170px', width: '170px', marginTop: '200px'}}/> }
+          {isLoading == true && <img src={loading} alt="Loading..." style={{height: '170px', width: '170px', marginTop: '200px'}}/> }
           {isLoading == false && <div className='app-content-div'>
             {searchType === 'drivers' && filteredData !== undefined && <DriverList Drivers_Data= {filteredData} onClickDriver = {onClickDriverHandler} key={Math.random()}/>}
             {searchType === 'constructors' && filteredData !== undefined && <ConstructorList Constructor_Data= {filteredData} onClickConstructor = {onClickConstructorHandler}/>}
