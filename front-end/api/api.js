@@ -1,9 +1,7 @@
 // Fetch ou Axios
 import axios from "axios";
 
-// const { NODE_ENV } = process.env;
-const URL = "http://localhost:3001/api";
-// const URL = "https://spotify-project-of17.onrender.com/api";
+const URL = "https://f1-project-x6nm.onrender.com/api";
 
 
 const getDriversFilter = async(season, constructorId) => {
