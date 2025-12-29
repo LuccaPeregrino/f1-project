@@ -1,0 +1,40 @@
+
+  .Constructors {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: auto;
+    align-items: center;
+  }
+  
+  .Constructor-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #850000;
+    display: flex;
+    justify-content: center;
+  }
+  
+    .Constructor-image {
+    position: absolute;
+    width: 125px;
+    height: 125px;
+    border: 2px solid #c9c9c9;
+    border-radius: 50%;
+    top: 7px;
+    z-index: 1;
+  }
+  
+  .Constructor-name {
+    position: absolute;
+    width: 130px;
+    text-align: center;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    top: 147px;
+    z-index: 1;
+    color: #c9c9c9;
+  }

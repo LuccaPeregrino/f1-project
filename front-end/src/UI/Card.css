@@ -1,0 +1,31 @@
+.card {
+  position: relative;
+    width: 160px;
+    height: 180px;
+    background-color: #850000;
+    margin: 8% 5px 7% 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border-radius: 3px; */
+    filter: drop-shadow(0px 18px 10px rgb(233 233 233 / 25%));
+}
+
+.card:before{
+	  content: "";
+	  position: absolute;
+	  width: 0;
+	  border-left: 80px solid transparent;
+	  border-right: 80px solid transparent;
+    bottom: 100%;
+	  border-bottom: 40.41px solid #850000;
+}
+
+.card:after{
+  content: "";
+  position: absolute;
+  border-left: 80px solid transparent;
+  border-right: 80px solid transparent;
+  top: 99.94%;
+  border-top: 40.41px solid #850000;
+}

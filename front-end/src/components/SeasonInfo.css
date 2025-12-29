@@ -1,0 +1,220 @@
+.div-general {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.div-content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    height: 220px;
+}
+
+.div-infos{
+    display: flex;
+    flex-direction: row;
+    height: 190px;
+    width: 100%;
+    justify-content: center;
+}
+
+.div-infos-left{
+    padding: 8% 172px 7% 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+}
+
+.div-infos-right{
+    padding: 1% 16px 1% 0px;
+    width: 55%;
+}
+
+.text-info{
+    font-size: 15px;
+}
+
+.season-image{
+    position: absolute;
+    top: 38px;
+    width: 180px;
+    height: auto;
+    z-index: 1;
+}
+
+.season-name{
+    z-index: 2;
+    color: #f5f5f5 !important;
+    font-size: 21px;
+    font-weight: 500;
+    position: relative;
+    top: -12px;
+}
+
+.search-type-chart{
+    align-self: start;
+    font-size: 13px;
+    border-radius: 4px;
+}
+
+.table2Selector{
+    align-self: start;
+    font-size: 13px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+.driver-section-header, .constructor-section-header{
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 6px;
+}
+
+.title-driver-section, .title-constructor-section{
+    color: #fff;
+    font-weight: bold;
+    font-size: 19px;
+    align-self: center;
+}
+
+.div-charts{
+    margin-top: 40px;
+}
+
+.div-tables{
+    margin-top: 40px;
+}
+
+.div-chart-line-championchip{
+    margin-top: 15px;
+    margin-left: 55px;
+    margin-right: 55px;
+}
+
+.div-table-championchip{
+    margin-top: 15px;
+    margin-left: 55px;
+    margin-right: 55px;
+}
+
+.div-podium-drivers-info{
+    margin-top: 15px;
+}
+
+.div-podium{
+    height: 340px;
+}
+
+.podium-bars{
+    display: flex;
+    height: 245px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+
+.second-podium, .first-podium, .third-podium{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 90px;
+    height: 100%;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.second-bar{
+    background-color: silver;
+    height: 118px;
+    width: 100%;
+    text-align: center;
+    align-content: center;
+    color: black;
+        font-weight: 600;
+}
+
+.first-bar{
+    background-color: gold;
+    height: 145px;
+    width: 100%;
+    text-align: center;
+    align-content: center;
+    color: black;
+        font-weight: 600;
+}
+
+.third-bar{
+    background-color: rgb(195, 159, 111);
+    height: 80px;
+    width: 100%;
+    text-align: center;
+    align-content: center;
+    color: black;
+        font-weight: 600;
+}
+
+.pilot-image, .constructor-image {
+  position: static;
+  width: 100px;
+  height: 100px;
+  border: 2px solid #c9c9c9;
+  border-radius: 50%;
+  top: 7px;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.pilot-name {
+  position: absolute;
+  width: 130px;
+  text-align: center;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  top: 147px;
+  z-index: 1;
+  color: #c9c9c9;
+}
+
+.div-section{
+    background-color: #404040;
+    border-radius: 8px;
+    padding: 25px 9px 60px 9px;
+}
+
+.div-search-type{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 40px;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* .div-table{
+
+} */
+
+.div-table::-webkit-scrollbar {
+  width: 10px; /* largura da barra de rolagem vertical */
+  height: 10px; /* altura da barra de rolagem horizontal */
+}
+
+.div-table::-webkit-scrollbar-track {
+  background: #2a2a2a; /* fundo da track */
+  border-radius: 5px;
+}
+
+.div-table::-webkit-scrollbar-thumb {
+  background: #a1a1a1; /* cor do "polegar" da barra */
+  border-radius: 5px;
+  border: 2px solid #2a2a2a; /* espaçamento ao redor */
+}
+
+.div-table::-webkit-scrollbar-thumb:hover {
+  background: #b6b6b6; /* cor ao passar o mouse */
+}

@@ -1,0 +1,305 @@
+@import "react-alice-carousel/lib/alice-carousel.css";
+
+.App {
+  background-color: #181818;
+  min-height: 100vh; /* Note a medida */
+}
+
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 30px;
+}
+
+.app-header__img {
+  height: 55px;
+  width: auto;
+}
+
+.app-header__link {
+  color: #bbbbbb;
+  text-decoration: none;
+}
+
+.app-header__link:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.app-panel {
+  position: relative;
+  overflow: hidden; 
+  z-index: 0;
+  margin: 0 30px 10px;
+  padding: 20px;
+  flex: 1;
+  background: url('src/assets/images/f1BackGround-photoaidcom-greyscale.png') repeat-x center top;
+  background-repeat: repeat;
+  background-size: 1850px auto; /* define largura fixa e mantém proporção */
+  background-position: top left;
+  border-radius: 20px;
+  /* background-color: #2e2d2d !important; */
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: auto;
+  min-height: 720px;
+}
+
+
+.app-panel-seasons {
+  position: relative;
+  overflow: hidden; 
+  z-index: 0;
+  margin: 0 30px 10px;
+  padding: 20px;
+  flex: 1;
+  /* background: url('src/assets/images/Evolution.jpg') repeat-x center top;
+  background-repeat: repeat;
+  background-size: 1106px auto; /* define largura fixa e mantém proporção */
+  background-position: top left;
+  border-radius: 20px;
+  background-color: #2e2d2d !important;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: auto;
+  height: 380px;
+}
+
+.app-panel::before {
+  content: "";
+  position: absolute;
+  inset: 0;                
+  background: rgba(39, 39, 39, 0.94);
+  /* backdrop-filter: blur(1px);  */
+  z-index: 1; 
+  pointer-events: none; 
+}
+
+
+/* .app-panel-seasons::before {
+  content: "";
+  position: absolute;
+  inset: 0;                
+  background: rgba(39, 39, 39, 0.94);
+  backdrop-filter: blur(1px);
+  z-index: 1; 
+  pointer-events: none; 
+} */
+
+.app-panel-no-search-results {
+  margin-top: 50px;
+  color: floralwhite;
+}
+
+.app-search-bar {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.app-search__select {
+  padding-left: 13px;
+  border-radius: 15px 0px 0px 15px;
+  height: 33px;
+  border: 0 !important;
+  border-right: solid 1px #262626 !important;
+}
+
+.app-search__select2 {
+  padding: 0 10px;
+  border-radius: 0;
+  height: 33px;
+  border: 0 !important;
+}
+
+.app-search__select3 {
+  border-radius: 0;
+  height: 33px;
+  border: 0 !important;
+  border-left: solid 1px #262626 !important;
+  border-right: solid 1px #262626 !important;
+  border-color: white;
+}
+
+.app-search__select, .app-search__select2, .app-search__select3:focus{
+   outline: none;
+}
+
+.app-search-input {
+  border: solid 4px !important;
+  border-color: rgb(255, 255, 255) !important;
+  /* border-right: solid 1px #262626 !important; */
+  border-radius: 0 !important;
+}
+
+.app-search-button {
+  background-color: white !important;
+  border: solid 4px !important;
+  border-color: rgb(255, 255, 255) !important;
+  border-radius: 0px 15px 15px 0px !important;
+}
+
+.app-search-button:hover {
+  color: rgb(229, 17, 17) !important;
+}
+
+.app-search-input:focus {
+  outline: none;
+}
+
+.modal-dialog {
+    width: 80vw !important;
+    max-width: none !important;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.filter {
+  padding: 30px 0px;
+}
+
+.filter input {  
+  border: solid;
+  border-color: rgb(255, 255, 255);
+  border-radius: 5px 0px 0px 5px;
+}
+
+.filter input:focus-visible {  
+  border: 0px;
+}
+
+.filter button {
+  border: solid;
+  border-color: rgb(255, 255, 255);
+  border-radius: 0px 5px 5px 0px;
+}
+
+.modal-dialog-centered {
+  align-items: stretch !important;
+}
+
+.modal-content {
+  background-color: #262626 !important;
+}
+
+.modal-title{
+  color: #dbdbdb  !important;
+}
+
+.modal-backdrop {
+  background-color: rgb(0, 0, 0) !important; /* Example: Darker, less transparent */
+}
+
+.special_modal .modal-content{
+   background-color: #000;
+   color: #fff;
+}
+
+
+.modal-header .btn-close{
+  background-color: #a5a5a5 !important;
+}
+
+.app-content-div{
+  position: relative;
+  z-index: 3;
+  height: auto;
+  width: 100%;
+}
+
+.app-content-div-inner{
+  position: relative;
+  z-index: 3;
+}
+
+.app-div-seasons, .app-div-driver-cronstructor {
+  height: auto;
+  width: 100%;
+  margin-bottom: 65px;
+}
+
+.app-div-seasons__header {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 130%;
+  color: white;
+  margin: 0 0 0 35px;
+}
+
+.app-div-inner-seasons__header, .app-div-driver-cronstructor__header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 130%;
+  color: white;
+  margin: 8px 0;
+  z-index: 3;
+  position: relative;
+}
+
+.alice-carousel{
+  padding-left: 23px;
+}
+
+.alice-carousel__wrapper {
+  height: 340px !important;
+}
+
+.alice-carousel__prev-btn-item{
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  bottom: 215px;
+  right: 99%;
+  font-size: 50px;
+  color: #ffffff;
+}
+
+.alice-carousel__prev-btn-item:hover{
+  color: #ffffff;
+}
+
+.alice-carousel__next-btn-item{
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  bottom: 215px;
+  left: 99%;
+  font-size: 50px;
+  color: #ffffff;
+}
+
+.alice-carousel__next-btn-item:hover{
+  color: #ffffff;
+}
+
+.alice-carousel__dots {
+  display: none !important;
+}
+
+.alice-carousel__dots-item {
+    display: none !important;
+}
