@@ -12,8 +12,8 @@ import { getDriversFilter, getConstructorsBySeason, getSeasonsByConstructor, get
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {faMagnifyingGlass} from "@fortawesome/free-solid-svg-icons";
 import AliceCarousel from 'react-alice-carousel';
-import logo from '../assets/logo.png'
-import loading from '../assets/loading.gif'
+import logo from './assets/logo.png'
+import loading from './assets/loading.gif'
 
 
 
